@@ -14,41 +14,56 @@ article {
 
 h1 {
     width: fit-content;
-    display: flex;
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    color: black;
-    font-family: "JetBrains Mono", sans-serif;
-    background-color: #FFFFFF;
-    padding: 1rem 2rem;
-    border-radius: 1rem;
+    color: #3a3a3a;  /* gris oscuro suave */
+    font-family: 'Patrick Hand', cursive;
+    font-size: 44px;
+    letter-spacing: 1px;
+    background-color: #ffffff;
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
 }
 
+
+
 .image {
-    width: 20rem;
-    height: 25rem;
-    border-radius: 2rem;
-    background-image: url("./img/cutegif.gif");
-    background-position: center;
-    background-size: cover;
+  width: 340px;
+    height: 340px;
+  background-image: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGZ5ZDgzNzExOGV2eDQ0cW54aXNxdWJoMXpyc21vNGVzcHEwMXFjNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KEf7gXqvQ8B3SWnUid/giphy.gif");
+  background-size: cover;
+  background-position: center;
+  border-radius: 25px;
+  margin: 20px auto;
 }
+
 
 .btns {
     position: relative;
     width: 20rem;
     display: flex;
     justify-content: space-between;
-]
 }
+
 
 button {
     padding: 1rem 3rem;
-    box-shadow: 39px 7px 8px 0px rgba(34, 60, 80, 0.2);
+    border-radius: 50px;
     border: none;
-    border-radius: 10%;
-    border: 1px solid gray;
+    background-color: #ffffff;
+    color: #3a3a3a;
+    font-size: 18px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.3s ease;
 }
+
+button:hover {
+    transform: scale(1.08);
+}
+
+
 
 #yessir {
     margin-left: 13rem;
@@ -57,12 +72,15 @@ button {
 }
 
 body {
-    background-color: deeppink;
+    background-color: #ffbac5;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Patrick Hand', cursive;
 }
+
+
 
 #nooo {
     position: absolute;
@@ -70,8 +88,14 @@ body {
     transition: 0.2s all ease-in-out;
 }
 
+#yessir {
+    background-color: #ffffff;
+    color: #1f7668;
+    font-weight: bold;
+}
+
 #yessir:hover {
-    background-color: hotpink;
+    transform: scale(1.08);
 }
 
 p{
