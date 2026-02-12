@@ -44,6 +44,7 @@ h1 {
 .btns {
     display: flex;
     gap: 1rem;
+    position: relative;
 }
 
 button {
@@ -55,10 +56,11 @@ button {
     font-size: 18px;
     box-shadow: 0 6px 12px rgba(0,0,0,0.1);
     cursor: pointer;
-    transition: 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
-button:hover {
+/* Hover SOLO para el botón Sí */
+#yessir:hover {
     transform: scale(1.08);
 }
 
