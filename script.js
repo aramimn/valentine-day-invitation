@@ -1,19 +1,14 @@
-let leftPos = 0
-let bottomPos = 0
-document.getElementById('yessir').addEventListener('click', () => {
-    alert('Congratulations! You have been invited to a Valentine\'s Day dinner. Please RSVP by February 10th. We hope to see you there!')
-})
-document.getElementById('nooo').addEventListener('mouseover', () => {
-    leftPos = Math.floor(Math.random() * (50 - (-50) + 1)) + (-50);
-    bottomPos = Math.floor(Math.random() * (100 - (-100) + 1)) + (-100);
-    document.getElementById('nooo').style.position = "absolute"
-    document.getElementById('nooo').style.left = leftPos + "%"
-    document.getElementById('nooo').style.bottom = bottomPos + "%"
-})
-document.getElementById('nooo').addEventListener('click', () => {
-    leftPos = Math.floor(Math.random() * (50 - (-50) + 1)) + (-50);
-    bottomPos = Math.floor(Math.random() * (100 - (-100) + 1)) + (-100);
-    document.getElementById('nooo').style.position = "absolute"
-    document.getElementById('nooo').style.left = leftPos + "%"
-    document.getElementById('nooo').style.bottom = bottomPos + "%"
-})
+const yesBtn = document.getElementById("yessir");
+const firstScreen = document.getElementById("first-screen");
+const secondScreen = document.getElementById("second-screen");
+
+yesBtn.addEventListener("click", () => {
+    firstScreen.style.display = "none";
+    secondScreen.style.display = "flex";
+    secondScreen.style.opacity = "0";
+
+    setTimeout(() => {
+        secondScreen.style.transition = "opacity 0.8s ease";
+        secondScreen.style.opacity = "1";
+    }, 50);
+});
