@@ -8,7 +8,6 @@ yesBtn.addEventListener("click", () => {
     secondScreen.style.display = "flex";
 });
 
-/* 👇 Botón "No" huye */
 noBtn.addEventListener("mouseenter", () => {
     const randomX = Math.floor(Math.random() * 400) - 200;
     const randomY = Math.floor(Math.random() * 300) - 150;
